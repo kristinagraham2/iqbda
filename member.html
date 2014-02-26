@@ -1,20 +1,16 @@
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Join IQBDA Today</title>
+    <meta charset="utf-8">
+    <title>Join IQBDA</title>
+    <link rel="stylesheet" type="text/css" href="base.css" media="screen" />
   </head>
   <body>
-  
-  <div id="page-wrapper">
-      
-      <header id="masthead">
-        <img width="102" height="60" src="Skittles.gif">
-        
-          
-         
-        <h1>The International QBASIC Developers
-          Association</h1>
-      
+    <div id="page-wrapper">
+      <header id="page-header">
+        <img width="102" height="60" src="Skittles.gif" alt="logo">
+        <h1>IQBDA</h1>
+        <h2>The International QBASIC Developers Association</h2>
+      </header>
       
       <nav id="navbar">
         <ul>
@@ -25,42 +21,45 @@
             <a href="iqbdc.html">IQBDC</a>
           </li>
           <li>
-          <a href="member.html">Become a Member</a>
+            <a href="member.html">Become a Member</a>
           </li>
         </ul>
       </nav>
-      </header>
-      
       <div id="content">
-      <h1>Join IQDBC Today!</h1>
-      <form action="http://is-dsb.fairfield.edu/is135/iqbda-signup.php" method="post">
-      
-      <ul>
-      <p><label for="form-name">Name:</label> <input type="text" name="username" id="form-name"><br>
-      <label for="form-pass">Password:</label> <input type="password" name="password" id="form-pass"><br>
-      <label for="form-pass">Password (again):</label> <input type="password" name="username" id="form-pass"><br>
-      <label for="form-email">Email:</label> <input type="email" name="username" id="form-email"><br>
-      <form action="/iqbda-signup.php" method="POST" enctype="multipart/form-data">
-      <label>Photo</label>
-      <input type="file" name="photo" size="28"<br></form>
-      <label for="form-address">Mailing Address:</label> <textarea name="mailing_address" rows="2" cols="20"></textarea></p>
-      
-      
-      <p>Do you plan to attend IQBDC '98? <label><input type="radio" name="radio button">Yes</label><label><input type="radio" name="radio button">No</label></p>
-      
-
-<p>How did you hear about us?
-<select name="Superbowl Ad"></p>
-<option>Superbowl Ad</option>
-<option>Internet</option>
-<option>A Friend</option>
-<option>Other</option>
-</select>
-
-<p><input type="submit"></p>
-       
+        <header id="page-title"><h1>Join IQBDA Today!</h1></header>
+        <form action="http://is-dsb.fairfield.edu/is135/iqbda-signup.php" method="post">
+          <label for="name-field">Name</label>
+          <input id="name-field" type="text" name="name">
+          
+          <label for="pass-field">Password</label>
+          <input id="pass-field" type="password" name="pass">
+          
+          <label for="pass2-field">Password (again)</label>
+          <input id="pass2-field" type="password" name="pass2">
+          
+          <label for="email-field">Email</label>
+          <input id="email-field"type="email" name="email">
+          
+          <label for="photo-field">Photo</label>
+          <input id="photo-field" type="file" name="photo">
+          
+          <label for="address-field">Mailing Address</label>
+          <textarea id="address-field" name="address"></textarea>
+          
+          <label>Do you plan to attend IQBDC ‘98?</label>
+          <input type="radio" name="iqbdc98" value="Y" id="iqbdc98-Y"><label for="iqbdc98-Y">Yes</label>
+          <input type="radio" name="iqbdc98" value="N" id="iqbdc98-N"><label for="iqbdc98-N">No</label>
+          
+          <label for="channel-field">How did you hear about us?</label>
+          <select id="channel-field" name="channel">
+            <option value="superbowl">Superbowl Ad</option>
+            <option value="news">News Article</option>
+            <option value="email">Email</option>
+            <option value="flyover">Flyover at the Beach</option>
+          </select>
+          <input type="submit">
+        </form>
+      </div>
     </div>
   </body>
 </html>
-
- 
